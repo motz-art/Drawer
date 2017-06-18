@@ -1,15 +1,4 @@
-﻿<?php
-	include 'core.php';
-	
-	if (isset($_POST['svgXMLData'])){
-		header('Content-type: image/svg+xml');
-		header('Content-Disposition: attachment; filename="drawing.svg"');
-		echo $_POST['svgXMLData'];		
-		exit;
-	}
-	
-?>
-<!doctype html>
+﻿<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -82,7 +71,6 @@
 				e.currentTarget.rows = nRowCnt+1; 				
 			}
 			</script>
-			<?php include 'header.php'; ?>
 	</head>
 	<body>
 			<header>

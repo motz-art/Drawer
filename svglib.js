@@ -53,12 +53,20 @@ add(e,{
 		createPath:function(color, fill, width){return this.create('path',{stroke:color||null, fill:fill||null, 'stroke-width':width||null})
 			.add({
 				addM:function(p){
-					var moveTo = this.createSVGPathSegMovetoAbs(p.x,p.y);
-					this.pathSegList.appendItem(moveTo);
+					var data = this.getAttribute('d')  || "";
+					if (data.length > 0) {
+						data += ' ';
+					}
+					data += 'M' + p.x + ' ' + p.y;
+					this.setAttribute('d', data);
 				},
 				addC:function(p1,p2,p3){
-					var curveTo = this.createSVGPathSegCurvetoCubicAbs(p3.x,p3.y,p1.x,p1.y,p2.x,p2.y);
-					this.pathSegList.appendItem(curveTo);
+					var data = this.getAttribute('d') || "";
+					if (data.length > 0) {
+						data += ' ';
+					}
+					data += 'C' + p1.x + ' ' + p1.y + ', ' + p2.x + ' ' + p2.y + ', ' + p3.x + ' ' + p3.y;
+					this.setAttribute('d', data);
 				}
 			})
 		},
