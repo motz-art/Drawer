@@ -1,0 +1,119 @@
+article, header, footer, figure, banner, small{ 
+	display: block; 
+}
+/* whole site */
+
+h1{
+	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	color: #004080;
+	font-size: 20px;
+}
+a{
+	color: #08a020;
+}
+
+hr, header>hr{
+	clear: both;
+	float: none;
+	height: 15px;
+	border: 0px;
+	background-image:url('images/hr.gif');
+}
+
+/*Body and content*/
+body {
+	background-color: white;
+	background-image: url('images/pencils.jpg');
+	background-attachment: scroll;
+	background-position: -90px 60px;
+	background-repeat: no-repeat;
+	font-family: Georgia, 'Bitstream Charter', serif;
+}
+
+body>article{
+	width:980px;
+	margin: 30px auto 0px auto;	
+}
+
+/* Header */
+header>*{
+	float: left;
+	clear: left;
+}
+header>#logo img{
+	float: left;
+	clear: left;
+}
+header>#logo figcaption{
+	float: left;
+	clear: left;
+	margin: 0px 0px 10px 25px;
+}
+header>#button{
+	margin: 15px 5px 10px 40px;
+}
+header>article#func{
+	margin-left: 40px;
+}
+header>article#func{
+	float: left;
+	clear: left;
+}
+header>#block-schema{
+	float: right;
+	clear: right;
+}
+#func li{
+	list-style-image: url('images/bullet.gif');
+}
+a img{
+	border: 0px;
+}
+
+/*Footer*/
+footer>small{
+	margin: 0 auto;
+	font-size: 10px;
+	text-align: center;
+}
+footer{
+	clear: both;
+}
+
+#twitter{
+	float: right;
+}
+
+/*Content*/
+article.comment{
+	clear: both;	
+}
+.comment>div{
+	margin-left:200px;
+}
+.comment>header{
+	font-family:"Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	color: #0040ff;
+	width: 190px;
+	float: left;
+	text-align: right;
+}
+.comment>footer{
+	width: 190px;
+	float: right;
+	clear: none;
+}
+article>form{
+	clear: both;
+	margin-left: 200px;
+}
+figure#twitter{
+	float:left;
+}
+figure#twitter figcaption{
+	font-family:"Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	color: #004080;
+	font-weight: bold;
+	text-align: center;
+	display:block;
+}

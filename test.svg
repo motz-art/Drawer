@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	 zoomAndPan="disable" >
+	 <style type="text/css"><![CDATA[
+		polygon, circle, ellipse{
+			fill: url(#shapeFill);
+			opacity: 0.5;
+			stroke: #004080;
+			stroke-width: 1;
+		}
+		polygon:hover, circle:hover, ellipse:hover{
+			fill: url(#shapeFill);
+			stroke: #0080ff;
+			stroke-width: 3;
+		}
+		path{
+			fill: transparent;
+			stroke: green;
+			stroke-width: 3;
+			stroke-opacity: 0.5;
+		}
+	 ]]></style>
+	 <defs>
+		<radialGradient id="shapeFill" cx="30%" cy="30%" r="90%" spreadMethod="reflect">
+			<stop offset="0%" stop-color="#ffffff" />
+			<stop offset="100%" stop-color="#d0d0ff" />
+		</radialGradient>
+	 </defs>
+	 <!-- SVG code goes here -->
+</svg>
